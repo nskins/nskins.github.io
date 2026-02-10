@@ -7,8 +7,12 @@ export default function Header() {
       <HeaderLink href="/">
         <Image src="/home.svg" alt="Home" height="20" width="20" />
       </HeaderLink>
-      <HeaderLink href="/running" children="running" />
-      <HeaderLink href="/contact" children="contact" />
+      <HeaderLink href="/running">
+        running
+      </HeaderLink>
+      <HeaderLink href="/contact">
+        contact
+      </HeaderLink>
     </div>
   )
 }
