@@ -24,6 +24,13 @@ export default function Running() {
       <div className="pb-2">
         <div className="text-2xl font-bold px-16 py-4">Running</div>
         <RaceResult
+            name="Martian Invasion of Races Marathon"
+            date="Apr. 11, 2026"
+            distance="26.2 mi"
+            time="3:07:47"
+            terrain="Road"
+        />
+        <RaceResult
             name="Phoenix Marathon"
             date="Dec. 13, 2025"
             distance="26.2 mi"
