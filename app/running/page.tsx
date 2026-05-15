@@ -9,12 +9,14 @@ function RaceResult({ name, date, distance, time, terrain }
     }
 ) {
     return (
-        <div className="even:bg-gray-200 py-2">
-            <div className="text-xl font-bold px-16">{name}</div>
-            <div className="text-l px-16"><strong>Date</strong>: {date}</div>
-            <div className="text-l px-16"><strong>Distance</strong>: {distance}</div>
-            <div className="text-l px-16"><strong>Time</strong>: {time}</div>
-            <div className="text-l px-16"><strong>Terrain</strong>: {terrain}</div>
+        <div className="px-16 py-2">
+            <div className="border rounded-lg py-2 shadow-lg max-w-xl">
+                <div className="text-xl font-bold px-4">{name}</div>
+                <div className="text-l px-4"><strong>Date</strong>: {date}</div>
+                <div className="text-l px-4"><strong>Distance</strong>: {distance}</div>
+                <div className="text-l px-4"><strong>Time</strong>: {time}</div>
+                <div className="text-l px-4"><strong>Terrain</strong>: {terrain}</div>
+            </div>
         </div>
     )
 }
@@ -23,6 +25,7 @@ export default function Running() {
     return (
       <div className="pb-2">
         <div className="text-2xl font-bold px-16 py-4">Running</div>
+        <div className="text-xl font-bold px-16 py-2">2026</div>
         <RaceResult
             name="Martian Invasion of Races Marathon"
             date="Apr. 11, 2026"
@@ -30,6 +33,7 @@ export default function Running() {
             time="3:07:47"
             terrain="Road"
         />
+        <div className="text-xl font-bold px-16 py-2">2025</div>
         <RaceResult
             name="Phoenix Marathon"
             date="Dec. 13, 2025"
@@ -72,6 +76,7 @@ export default function Running() {
             time="3:37:52"
             terrain="Trail"
         />
+        <div className="text-xl font-bold px-16 py-2">2024</div>
         <RaceResult
             name="University of Michigan Health-West Grand Rapids Marathon"
             date="Oct. 20, 2024"
@@ -114,6 +119,7 @@ export default function Running() {
             time="18:15"
             terrain="Road"
         />
+        <div className="text-xl font-bold px-16 py-2">2023</div>
         <RaceResult
             name="Black Toenail Friday Half Marathon"
             date="Nov. 24, 2023"
@@ -135,6 +141,7 @@ export default function Running() {
             time="20:07"
             terrain="Road"
         />
+        <div className="text-xl font-bold px-16 py-2">2011</div>
         <RaceResult
             name="Fifth Annual Creekfest 5K"
             date="Jun. 4, 2011"
