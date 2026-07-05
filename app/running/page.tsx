@@ -27,6 +27,13 @@ export default function Running() {
         <div className="text-2xl font-bold px-16 py-4">Running</div>
         <div className="text-xl font-bold px-16 py-2">2026</div>
         <RaceResult
+            name="Clawson Firecracker Mile"
+            date="Jul. 4, 2026"
+            distance="1 mi"
+            time="4:52.97"
+            terrain="Road"
+        />
+        <RaceResult
             name="Martian Invasion of Races Marathon"
             date="Apr. 11, 2026"
             distance="26.2 mi"
@@ -52,7 +59,7 @@ export default function Running() {
             name="Clawson Firecracker Mile"
             date="Jul. 4, 2025"
             distance="1 mi"
-            time="5:01"
+            time="5:01.35"
             terrain="Road"
         />
         <RaceResult
@@ -95,7 +102,7 @@ export default function Running() {
             name="Clawson Firecracker Mile"
             date="Jul. 4, 2024"
             distance="1 mi"
-            time="5:03"
+            time="5:03.54"
             terrain="Road"
         />
         <RaceResult
