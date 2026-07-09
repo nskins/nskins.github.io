@@ -1,160 +1,53 @@
-function RaceResult({ name, date, distance, time, terrain }
-    :
-    {
-        name : string,
-        date : string,
-        distance : string,
-        time : string,
-        terrain : string
-    }
-) {
+import { RaceResult, races11, races23, races24, races25, races26 } from "./race_result";
+
+function RaceResultCard({ race } : { race: RaceResult }) {
     return (
-        <div className="px-16 py-2">
-            <div className="border rounded-lg py-2 shadow-lg max-w-xl">
-                <div className="text-xl font-bold px-4">{name}</div>
-                <div className="text-l px-4"><strong>Date</strong>: {date}</div>
-                <div className="text-l px-4"><strong>Distance</strong>: {distance}</div>
-                <div className="text-l px-4"><strong>Time</strong>: {time}</div>
-                <div className="text-l px-4"><strong>Terrain</strong>: {terrain}</div>
+        <div className="px-2 py-2 basis-full lg:basis-1/3">
+            <div className="border rounded-lg py-2 shadow-lg h-full">
+                <div className="text-xl font-bold px-4">{race.name}</div>
+                <div className="text-l px-4"><strong>Date</strong>: {race.date}</div>
+                <div className="text-l px-4"><strong>Distance</strong>: {race.distance}</div>
+                <div className="text-l px-4"><strong>Time</strong>: {race.time}</div>
+                <div className="text-l px-4"><strong>Terrain</strong>: {race.terrain}</div>
             </div>
         </div>
     )
 }
 
+function RaceYear({ year, races } : { year: number, races: RaceResult[] }) {
+    return (
+        <>
+            <div className="text-xl font-bold px-16 py-2">{year}</div>
+            <div className="flex flex-row flex-wrap px-16">
+                {races.map(r => <RaceResultCard race={r} key={`${year}-${r.date}`} />)}
+            </div>
+        </>
+    )
+}
+
 export default function Running() {
     return (
-      <div className="pb-2">
+      <div className="pb-2 container mx-auto">
         <div className="text-2xl font-bold px-16 py-4">Running</div>
-        <div className="text-xl font-bold px-16 py-2">2026</div>
-        <RaceResult
-            name="Clawson Firecracker Mile"
-            date="Jul. 4, 2026"
-            distance="1 mi"
-            time="4:52.97"
-            terrain="Road"
+        <RaceYear
+            year={2026}
+            races={races26}
         />
-        <RaceResult
-            name="Martian Invasion of Races Marathon"
-            date="Apr. 11, 2026"
-            distance="26.2 mi"
-            time="3:07:47"
-            terrain="Road"
+        <RaceYear
+            year={2025}
+            races={races25}
         />
-        <div className="text-xl font-bold px-16 py-2">2025</div>
-        <RaceResult
-            name="Phoenix Marathon"
-            date="Dec. 13, 2025"
-            distance="26.2 mi"
-            time="3:08:09"
-            terrain="Road"
+        <RaceYear
+            year={2024}
+            races={races24}
         />
-        <RaceResult
-            name="Pines to Vines 55K"
-            date="Aug. 10, 2025"
-            distance="55 km"
-            time="5:42:09"
-            terrain="Trail"
+        <RaceYear
+            year={2023}
+            races={races23}
         />
-        <RaceResult
-            name="Clawson Firecracker Mile"
-            date="Jul. 4, 2025"
-            distance="1 mi"
-            time="5:01.35"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Clawson Freedom Run 5K"
-            date="Jun. 29, 2025"
-            distance="5 km"
-            time="18:04"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Island Time 24 Hour"
-            date="Jun. 6, 2025"
-            distance="110 mi"
-            time="22:51:34"
-            terrain="Trail"
-        />
-        <RaceResult
-            name="Trail Weekend Marathon"
-            date="Apr. 26, 2025"
-            distance="26.2 mi"
-            time="3:37:52"
-            terrain="Trail"
-        />
-        <div className="text-xl font-bold px-16 py-2">2024</div>
-        <RaceResult
-            name="University of Michigan Health-West Grand Rapids Marathon"
-            date="Oct. 20, 2024"
-            distance="26.2 mi"
-            time="3:17:31"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Pines to Vines 55K"
-            date="Aug. 11, 2024"
-            distance="55 km"
-            time="6:21:06"
-            terrain="Trail"
-        />
-        <RaceResult
-            name="Clawson Firecracker Mile"
-            date="Jul. 4, 2024"
-            distance="1 mi"
-            time="5:03.54"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Clawson Freedom Run 5K"
-            date="Jun. 30, 2024"
-            distance="5 km"
-            time="18:50"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Perfect PR Backyard Ultra"
-            date="May 18, 2024"
-            distance="79.1 mi"
-            time="19 hours"
-            terrain="Road/Trail"
-        />
-        <RaceResult
-            name="Romeo Winterfest 5K"
-            date="Feb. 3, 2024"
-            distance="5 km"
-            time="18:15"
-            terrain="Road"
-        />
-        <div className="text-xl font-bold px-16 py-2">2023</div>
-        <RaceResult
-            name="Black Toenail Friday Half Marathon"
-            date="Nov. 24, 2023"
-            distance="13.1 mi"
-            time="1:41:36"
-            terrain="Trail"
-        />
-        <RaceResult
-            name="Detroit Free Press Marathon"
-            date="Oct. 15, 2023"
-            distance="26.2 mi"
-            time="3:42:46"
-            terrain="Road"
-        />
-        <RaceResult
-            name="Run For Nature 5K"
-            date="Jun. 11, 2023"
-            distance="5 km"
-            time="20:07"
-            terrain="Road"
-        />
-        <div className="text-xl font-bold px-16 py-2">2011</div>
-        <RaceResult
-            name="Fifth Annual Creekfest 5K"
-            date="Jun. 4, 2011"
-            distance="5 km"
-            time="17:56"
-            terrain="Road"
+        <RaceYear
+            year={2011}
+            races={races11}
         />
       </div>
     );
