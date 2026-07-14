@@ -4,7 +4,7 @@ import { Project, projects } from "./project"
 function ProjectInfo({ project } : { project: Project }) {
   return (
       <div className="px-2 py-2 basis-full md:basis-1/2">
-          <div className="py-2 shadow-lg h-full">
+          <div className="py-2 shadow-xl h-full">
             <div className="flex flex-col">
               <div className="flex max-w-full min-h-50 max-h-50 justify-center p-2">
                 <img src={project.image} className="object-cover" />

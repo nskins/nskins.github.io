@@ -3,7 +3,7 @@ import { RaceResult, races11, races23, races24, races25, races26 } from "./race_
 function RaceResultCard({ race } : { race: RaceResult }) {
     return (
         <div className="px-2 py-2 basis-full lg:basis-1/3">
-            <div className="border rounded-lg py-2 shadow-lg h-full">
+            <div className="py-2 shadow-xl h-full">
                 <div className="text-xl font-bold px-4">{race.name}</div>
                 <div className="text-l px-4"><strong>Date</strong>: {race.date}</div>
                 <div className="text-l px-4"><strong>Distance</strong>: {race.distance}</div>
