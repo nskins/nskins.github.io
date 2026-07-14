@@ -147,4 +147,4 @@ const races11: RaceResult[] = [
   }
 ]
 
-export { races26, races25, races24, races23, races11 };
+export { races26, races25, races24, races23, races11 }

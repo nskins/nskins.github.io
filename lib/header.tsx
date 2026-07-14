@@ -8,6 +8,9 @@ export default function Header() {
         <HeaderLink href="/">
           <Image src="/home.svg" alt="Home" height="20" width="20" />
         </HeaderLink>
+        <HeaderLink href="/projects">
+          Projects
+        </HeaderLink>
         <HeaderLink href="/running">
           Running
         </HeaderLink>
