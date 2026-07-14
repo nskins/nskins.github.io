@@ -6,7 +6,7 @@ export default function PageLink({ href, children }
     children: React.ReactNode
   }) {
     return (
-      <Link href={href} className="text-blue-600 underline">
+      <Link href={href} className="text-blue-800 underline">
         {children}
       </Link>
   )
