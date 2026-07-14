@@ -9,10 +9,9 @@ function ProjectInfo({ project } : { project: Project }) {
               <div className="flex max-w-full min-h-50 max-h-50 justify-center p-2">
                 <img src={project.image} className="object-cover" />
               </div>
-              <div className="text-xl font-bold px-4">{project.name}</div>
+              <div className="text-xl font-bold px-4"><PageLink href={project.source}>{project.name}</PageLink></div>
               <div className="text-l px-4 pt-2">{project.description}</div>
               <div className="text-l px-4 pt-2"><strong>Technologies</strong>: {project.technologies}</div>
-              <div className="text-l px-4"><strong>Source code</strong>: {<PageLink href={project.source}>{project.source}</PageLink>}</div>
             </div>  
           </div>
       </div>
