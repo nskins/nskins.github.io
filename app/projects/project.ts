@@ -8,6 +8,13 @@ export type Project = {
 
 const projects: Project[] = [
   {
+    name: "Triangle Defender",
+    image: "triangle-defender.jpg",
+    description: "An arcade game in which you play as a triangle and defend yourself from a bunch of angry squares.",
+    technologies: "Godot, GDScript",
+    source: "https://github.com/nskins/triangle-defender"
+  },
+  {
     name: "Primality",
     image: "primality.png",
     description: "This service is designed to handle primality test requests in parallel by allowing end users to spin up multiple worker nodes and thereby prevent system bottlenecks.",
