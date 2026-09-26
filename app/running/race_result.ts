@@ -7,6 +7,20 @@ export type RaceResult = {
 }
 
 const races26: RaceResult[] = [
+  {
+    name: "Run Rabbit Run 100 Mile",
+    date: "Sep. 18, 2026",
+    distance: "100 mi",
+    time: "34:31:56",
+    terrain: "Trail"
+  },
+  {
+    name: "Ode to Laz Backyard Ultra",
+    date: "Jul. 18, 2026",
+    distance: "29.1 mi",
+    time: "7 hours",
+    terrain: "Trail"
+  },
   { 
     name: "Clawson Firecracker Mile",
     date: "Jul. 4, 2026",
@@ -30,6 +44,13 @@ const races25: RaceResult[] = [
     distance: "26.2 mi",
     time: "3:08:09",
     terrain: "Road"
+  },
+  {
+    name: "Run Woodstock 100K",
+    date: "Sep. 5, 2025",
+    distance: "100 km",
+    time: "20:24:25",
+    terrain: "Trail"
   },
   {
     name: "Pines to Vines 55K",
